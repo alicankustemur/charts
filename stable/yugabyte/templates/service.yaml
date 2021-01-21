@@ -66,7 +66,6 @@ metadata:
     component: "{{ $root.Values.Component }}"
     service-type: "headless"
 spec:
-  clusterIP: None
   ports:
     {{- range $label, $port := .ports }}
     - name: {{ $label | quote }}
